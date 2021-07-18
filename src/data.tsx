@@ -1,19 +1,23 @@
-export interface IStat {
-  count: string
-  label: string
+export interface IProduct {
+  icon: string
+  title: string
 }
 
-export const stats: IStat[] = [
+export const products: IProduct[] = [
   {
-    count: '10k+',
-    label: 'companies',
+    icon: '/svgs/watch2.svg',
+    title: 'Dark',
   },
   {
-    count: '314+',
-    label: 'templates',
+    icon: '/svgs/watch3.svg',
+    title: 'Light',
   },
   {
-    count: '12M+',
-    label: 'queries',
+    icon: '/svgs/watch2.svg',
+    title: 'Dark',
+  },
+  {
+    icon: '/svgs/watch3.svg',
+    title: 'Light',
   },
 ]
