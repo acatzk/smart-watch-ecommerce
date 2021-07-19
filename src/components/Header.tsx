@@ -13,7 +13,7 @@ const Header: React.FC<{}> = () => {
       </div>
       <div className="w-1/2">
         <div className="flex items-center">
-          <div className="relative w-[128px] h-[56px]">
+          <div className="relative w-[134px] h-[56px]">
             <Image
               src="/svgs/main-logo.svg"
               layout="fill"
@@ -23,7 +23,7 @@ const Header: React.FC<{}> = () => {
             />
           </div>
           <nav className="ml-auto">
-            <ul className="flex items-center space-x-10 text-sm">
+            <ul className="flex items-center space-x-16 text-sm">
               <li>
                 <Link href="#">
                   <a className="hover:text-gray-600 transition ease-in-out duration-150">
