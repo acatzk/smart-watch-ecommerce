@@ -3,7 +3,10 @@ import Header from '~/components/Header'
 
 const DefaultLayout: React.FC<{}> = ({ children }) => {
   return (
-    <div className="antialiased">
+    <div
+      className="grid min-h-screen place-items-center antialiased"
+      style={{ padding: '-20px' }}
+    >
       <Header />
       {children}
     </div>

@@ -9,9 +9,6 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
-      borderRadius: {
-        'xl': '50px',
-      },
       letterSpacing: {
         longest: '.50em'
       }
