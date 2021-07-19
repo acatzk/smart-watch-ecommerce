@@ -113,3 +113,63 @@ export const ChevronBottom: React.FC<IconType> = ({ className }) => {
     </svg>
   )
 }
+
+export const CloseIcon: React.FC<IconType> = ({ className }) => {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 29 29"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <line
+        x1="1.93934"
+        y1="27.9393"
+        x2="27.9393"
+        y2="1.93934"
+        stroke="white"
+        strokeWidth="3"
+      />
+      <line
+        x1="1.93934"
+        y1="27.9393"
+        x2="27.9393"
+        y2="1.93934"
+        stroke="white"
+        strokeWidth="3"
+      />
+      <line
+        x1="1.93934"
+        y1="27.9393"
+        x2="27.9393"
+        y2="1.93934"
+        stroke="white"
+        strokeWidth="3"
+      />
+      <line
+        x1="1.06066"
+        y1="1.93934"
+        x2="27.0607"
+        y2="27.9393"
+        stroke="white"
+        strokeWidth="3"
+      />
+      <line
+        x1="1.06066"
+        y1="1.93934"
+        x2="27.0607"
+        y2="27.9393"
+        stroke="white"
+        strokeWidth="3"
+      />
+      <line
+        x1="1.06066"
+        y1="1.93934"
+        x2="27.0607"
+        y2="27.9393"
+        stroke="white"
+        strokeWidth="3"
+      />
+    </svg>
+  )
+}
