@@ -17,7 +17,7 @@ const Index: NextPage<{}> = () => {
         <main className="relative grid grid-cols-1 lg:grid-cols-2">
           <section className="grid-cols-6 flex flex-col justify-center">
             <div className="flex items-center justify-center mt-14 md:mt-0">
-              <div className="flex flex-col">
+              <div className="flex flex-col mx-4">
                 <h1 className="text-5xl md:text-7xl font-extrabold tracking-wider">
                   Smartwatch
                 </h1>
