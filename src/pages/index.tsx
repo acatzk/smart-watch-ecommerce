@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { NextPage } from 'next'
 import { products } from '~/data'
-import Header from '~/components/Header'
 import ProjectList from '~/components/ProductList'
 import DefaultLayout from '~/layouts/defaultLayout'
 import { ChevronRight, ChevronBottom } from '~/utils/Icon'
@@ -15,7 +14,6 @@ const Index: NextPage<{}> = () => {
         <title>Simple Smartwatch Ecommerce</title>
       </Head>
       <DefaultLayout>
-        <Header />
         <main className="grid grid-cols-2">
           <section className="grid-cols-6 flex flex-col justify-center">
             <div className="flex items-center justify-center">
@@ -34,10 +32,7 @@ const Index: NextPage<{}> = () => {
             </div>
             <ProjectList products={products} />
           </section>
-          <section
-            className="grid-cols-6 relative bg-white"
-            style={{ height: '90vh' }}
-          >
+          <section className="grid-cols-6 relative" style={{ height: '90vh' }}>
             <Image
               src="/svgs/watch1.svg"
               layout="fill"
