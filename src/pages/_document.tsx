@@ -3,7 +3,7 @@ import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 class Document extends NextDocument<{}> {
   render() {
     return (
-      <Html>
+      <Html lang="en" className="dark">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
