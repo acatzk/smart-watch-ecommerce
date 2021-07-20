@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { useTheme } from 'next-themes'
 import { CloseIcon } from '~/utils/Icon'
-import ThemeChanger from '~/utils/ThemeChanger'
 
 interface SidebarProps {
   isOpen: boolean
@@ -10,14 +8,12 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
-  const { theme } = useTheme()
-
   return (
     <aside className={`${isOpen && 'fixed z-10 inset-0'}`}>
       <div
         className={`${
           isOpen ? 'translate-x-0' : '-translate-x-full'
-        } transform top-0 left-0 w-full md:w-[350px] bg-black dark:bg-white text-white dark:text-black
+        } transform top-0 left-0 w-full md:w-[350px] bg-black text-white 
         fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30`}
       >
         <div className="flex flex-col justify-between h-full">
@@ -27,7 +23,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                 onClick={() => setIsOpen(false)}
                 className="active:scale-95"
               >
-                <CloseIcon className="w-5 h-5 fill-current text-white dark:text-black" />
+                <CloseIcon className="w-5 h-5 fill-current text-white" />
               </button>
             </div>
             <ul className="mt-10 flex flex-col items-start space-y-8">
@@ -36,11 +32,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               ))}
             </ul>
           </nav>
-          <div className="flex items-center justify-between px-6 py-3">
-            <ThemeChanger className="py-2 px-4 border border-white dark:border-black rounded text-white dark:text-black" />
-            <div className="relative w-[134px] h-[56px]">
-              <Logo theme={theme} />
-            </div>
+          <div className="relative w-[134px] h-[56px] ml-auto right-8 bottom-4">
+            <Image
+              src="/svgs/logo-light.svg"
+              className="w-full h-full"
+              layout="fill"
+              alt="logo"
+            />
           </div>
         </div>
       </div>
@@ -71,31 +69,6 @@ function NavLinks({ setIsOpen, label }) {
         {label}
       </a>
     </li>
-  )
-}
-
-function Logo({ theme }) {
-  return (
-    <React.Fragment>
-      {theme === 'light' && (
-        <Image
-          src="/svgs/logo-light.svg"
-          layout="fill"
-          objectFit="fill"
-          alt="main-logo"
-          className="flex-shrink-0 inset-0 w-full h-full"
-        />
-      )}
-      {theme === 'dark' && (
-        <Image
-          src="/svgs/logo-dark.svg"
-          layout="fill"
-          objectFit="fill"
-          alt="main-logo"
-          className="flex-shrink-0 inset-0 w-full h-full"
-        />
-      )}
-    </React.Fragment>
   )
 }
 

@@ -4,7 +4,7 @@ import { IProduct } from '~/data'
 
 const ProjectItem: React.FC<IProduct> = ({ icon, title }) => {
   return (
-    <div className="rounded-[50px] shadow-xl bg-white dark:bg-[#2B3544]">
+    <div className="rounded-[50px] shadow-xl">
       <div className="flex flex-col items-center">
         <h1 className="font-extrabold text-3xl mt-4">{title}</h1>
         <p className="ml-6 md:ml-10 leading-none font-extralight ">Element</p>
