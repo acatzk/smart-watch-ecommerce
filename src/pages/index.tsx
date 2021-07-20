@@ -7,7 +7,7 @@ import ProjectList from '~/components/ProductList'
 import DefaultLayout from '~/layouts/defaultLayout'
 import { ChevronRight, ChevronBottom } from '~/utils/Icon'
 
-const Index: NextPage<{}> = () => {
+const Index: NextPage = () => {
   return (
     <React.Fragment>
       <Head>
@@ -24,7 +24,7 @@ const Index: NextPage<{}> = () => {
                 <h3 className="uppercase font-light text-lg md:text-2xl tracking-longest text-[#EF9C9C]">
                   Element serie
                 </h3>
-                <p className="mt-8 max-w-md items-center text-xs md:text-sm text-[#868686] font-light">
+                <p className="mt-8 max-w-md items-center text-xs md:text-sm text-[#868686] dark:text-[#D8D8D8] font-light">
                   Eu voluptate magna consectetur officia deserunt consequat ex
                   adipisicing nostrud non laborum onsectetur officia.{' '}
                 </p>

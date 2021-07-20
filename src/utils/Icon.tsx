@@ -17,7 +17,7 @@ export const MenuIcon: React.FC<IconType> = ({ className }) => {
         y1="3"
         x2="41"
         y2="3"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="6"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -27,7 +27,7 @@ export const MenuIcon: React.FC<IconType> = ({ className }) => {
         y1="18"
         x2="26"
         y2="18"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="6"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -37,7 +37,7 @@ export const MenuIcon: React.FC<IconType> = ({ className }) => {
         y1="32"
         x2="26"
         y2="32"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="6"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -59,7 +59,7 @@ export const ChevronRight: React.FC<IconType> = ({ className }) => {
         y1="4"
         x2="19.2188"
         y2="19.6832"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -70,7 +70,7 @@ export const ChevronRight: React.FC<IconType> = ({ className }) => {
         x2="24.6794"
         y2="-2.5"
         transform="matrix(-0.707107 0.707107 0.707107 0.707107 23.2188 20)"
-        stroke="black"
+        stroke="currentColor"
         strokeWidth="5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -94,7 +94,7 @@ export const ChevronBottom: React.FC<IconType> = ({ className }) => {
           x2="24.6794"
           y2="-2.5"
           transform="matrix(0.707107 0.707107 0.707107 -0.707107 4 0)"
-          stroke="black"
+          stroke="currentColor"
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -104,7 +104,7 @@ export const ChevronBottom: React.FC<IconType> = ({ className }) => {
           y1="19.6832"
           x2="35.6832"
           y2="4"
-          stroke="black"
+          stroke="currentColor"
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -114,7 +114,7 @@ export const ChevronBottom: React.FC<IconType> = ({ className }) => {
   )
 }
 
-export const CloseIcon: React.FC<IconType> = ({ className }) => {
+export const CloseIcon: React.FC<{ className: string }> = ({ className }) => {
   return (
     <svg
       className={className}
@@ -127,7 +127,7 @@ export const CloseIcon: React.FC<IconType> = ({ className }) => {
         y1="27.9393"
         x2="27.9393"
         y2="1.93934"
-        stroke="white"
+        stroke=""
         strokeWidth="3"
       />
       <line
@@ -135,7 +135,7 @@ export const CloseIcon: React.FC<IconType> = ({ className }) => {
         y1="27.9393"
         x2="27.9393"
         y2="1.93934"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="3"
       />
       <line
@@ -143,7 +143,7 @@ export const CloseIcon: React.FC<IconType> = ({ className }) => {
         y1="27.9393"
         x2="27.9393"
         y2="1.93934"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="3"
       />
       <line
@@ -151,7 +151,7 @@ export const CloseIcon: React.FC<IconType> = ({ className }) => {
         y1="1.93934"
         x2="27.0607"
         y2="27.9393"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="3"
       />
       <line
@@ -159,7 +159,7 @@ export const CloseIcon: React.FC<IconType> = ({ className }) => {
         y1="1.93934"
         x2="27.0607"
         y2="27.9393"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="3"
       />
       <line
@@ -167,7 +167,7 @@ export const CloseIcon: React.FC<IconType> = ({ className }) => {
         y1="1.93934"
         x2="27.0607"
         y2="27.9393"
-        stroke="white"
+        stroke="currentColor"
         strokeWidth="3"
       />
     </svg>
